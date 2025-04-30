@@ -40,6 +40,9 @@ export default function Navbar() {
             className=" text-white"
             onClick={handleOpen}
           />
+          <div className="flex justify-center items-center ">
+            <img src="/images/logo.png" alt="logo" className="ml-11" />
+          </div>
           <ul className="flex flex-col justify-between items-center font-bold text-lg text-white">
             <li>Home</li>
             <li>Services</li>
