@@ -10,6 +10,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <nav className="flex justify-around bg-red-800 p-8 w-screen">
       <div className="flex basis-2/4 justify-center cursor-pointer">
         <img src="/images/logo.png" alt="logo" className="" />
@@ -52,5 +53,7 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+    <div>This is to test that everything is working</div>
+    </>
   );
 }
