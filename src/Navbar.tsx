@@ -53,7 +53,6 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
-    <div>This is to test that everything is working</div>
     </>
   );
 }
