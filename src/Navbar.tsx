@@ -17,9 +17,9 @@ export default function Navbar() {
       </div>
 
       <ul className="hidden md:flex items-center justify-end md:text-white basis-2/4">
-        <li className="cursor-pointer md:pr-8 lg:pr-16">Home</li>
+        <li className="cursor-pointer md:pr-8 lg:pr-16">About Us</li>
         <li className="cursor-pointer md:pr-8 lg:pr-16">Services</li>
-        <li className="cursor-pointer md:pr-8 lg:pr-16">About</li>
+        <li className="cursor-pointer md:pr-8 lg:pr-16"></li>
         <li className="cursor-pointer md:pr-8 lg:pr-16">Contact</li>
       </ul>
       <div
