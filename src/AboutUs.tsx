@@ -1,12 +1,11 @@
 export default function AboutUs() {
   return (
     <div>
-    <div className="flex flex-col items-center bg-red-900">
-  <h1 className="flex justify-center pt-10 pb-4 text-white text-5xl">
-    We Are Phoenix Group
-  </h1>
-  <hr className="w-1/4 border-t border-gray-300 mb-12" />
-
+      <div className="flex flex-col items-center bg-red-900 p-2 sm:p-16 md:p-20">
+        <h1 className="flex justify-center pb-8 text-white text-5xl">
+          We Are Phoenix Group
+        </h1>
+        <hr className="w-1/4 border-t border-gray-300 mb-12" />
         <div className="w-3/4">
           <h2 className="text-white text-center text-2xl leading-relaxed">
             Founded in 1988. Phoenix Group represents a unique blend of
