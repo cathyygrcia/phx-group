@@ -10,49 +10,86 @@ export default function Navbar() {
   };
 
   return (
-    <>
-    <nav className="flex justify-around bg-red-800 p-8 w-screen">
-      <div className="flex basis-2/4 justify-center cursor-pointer">
-        <img src="/images/logo.png" alt="logo" className="" />
+    <nav className="w-full bg-red-800 text-white shadow-md fixed top-0 left-0 z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        {" "}
+        {/* Increased padding (py-6) */}
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            className=" w-auto cursor-pointer"
+          />{" "}
+          {/* Increased logo height */}
+        </div>
+        {/* Desktop Links */}
+        <ul className="hidden md:flex space-x-10 text-lg font-medium">
+          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
+            About Us
+          </li>
+          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
+            Services
+          </li>
+          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
+            Reviews
+          </li>
+          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
+            Contact
+          </li>
+        </ul>
+        {/* Hamburger Menu Icon */}
+        <button
+          onClick={handleOpen}
+          className="md:hidden focus:outline-none text-2xl"
+          aria-label="Toggle menu"
+        >
+          <GiHamburgerMenu />
+        </button>
       </div>
 
-      <ul className="hidden md:flex items-center justify-end md:text-white basis-2/4">
-        <li className="cursor-pointer md:pr-8 lg:pr-16">About Us</li>
-        <li className="cursor-pointer md:pr-8 lg:pr-16">Services</li>
-        <li className="cursor-pointer md:pr-8 lg:pr-16"></li>
-        <li className="cursor-pointer md:pr-8 lg:pr-16">Contact</li>
-      </ul>
+      {/* Mobile Menu */}
       <div
-        onClick={handleOpen}
-        className="flex items-center text-white text-3xl"
+        className={`fixed top-0 left-0 h-screen w-full bg-red-900/95 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } md:hidden z-40`}
       >
-        <GiHamburgerMenu className="sm:block md:hidden" />
-      </div>
-      <div
-        className={
-          isOpen
-            ? "fixed left-0 top-0 w-full md:hidden h-screen bg-red-900/95 p-10 ease-in"
-            : "fixed left-[-100%] top-0 p-10 ease-in "
-        }
-      >
-        <div className="flex justify-center flex-col items-center ">
+        <div className="flex flex-col items-center justify-center h-full space-y-8">
           <IoCloseOutline
-            size={50}
-            className=" text-white"
+            size={40}
+            className="absolute top-6 right-6 text-white cursor-pointer"
             onClick={handleOpen}
           />
-          <div className="flex justify-center items-center ">
-            <img src="/images/logo.png" alt="logo" className="ml-11" />
-          </div>
-          <ul className="flex flex-col justify-between items-center font-bold text-lg text-white">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
+          <img src="/images/logo.png" alt="Logo" className="h-16 mb-4" />{" "}
+          {/* Increased mobile logo size */}
+          <ul className="text-center space-y-6 text-xl font-semibold">
+            <li
+              className="hover:text-gray-300 cursor-pointer"
+              onClick={handleOpen}
+            >
+              About Us
+            </li>
+            <li
+              className="hover:text-gray-300 cursor-pointer"
+              onClick={handleOpen}
+            >
+              Services
+            </li>
+            <li
+              className="hover:text-gray-300 cursor-pointer"
+              onClick={handleOpen}
+            >
+              Review
+            </li>
+            <li
+              className="hover:text-gray-300 cursor-pointer"
+              onClick={handleOpen}
+            >
+              Contact
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    </>
   );
 }
