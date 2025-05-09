@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 import AboutUs from "./AboutUs";
 import Services from "./Services";
+import ContactUs from "./ContactUs";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <header className="App-header">
         <Navbar />
         <Banner/>
+        <ContactUs/>
         <AboutUs/>
         <Services/>
       </header>
