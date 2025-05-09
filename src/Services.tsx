@@ -14,6 +14,9 @@ export default function Services() {
             Management, Administrative Citation Management, and Residential and
             Temporary Permits.
           </p>
+          <button className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+            See More
+          </button>
         </div>
 
         {/** Card 2 (Middle Card - raised) */}
@@ -25,6 +28,9 @@ export default function Services() {
             mobile systems and software featuring state-of-the-art enforcement
             hardware and handheld technology.
           </p>
+          <button className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+            See More
+          </button>
         </div>
 
         {/** Card 3 (Side Card 2) */}
@@ -35,6 +41,9 @@ export default function Services() {
             We manage every phase in the life of a parking citation — from the
             moment it's placed on the vehicle to final data processing.
           </p>
+          <button className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+            See More
+          </button>
         </div>
       </div>
     </div>
