@@ -1,6 +1,3 @@
-import { FaLaptop } from "react-icons/fa";
-import { IoMdPaper } from "react-icons/io";
-import { FaMobileAlt } from "react-icons/fa";
 
 export default function AboutUs() {
   return (
@@ -35,20 +32,6 @@ export default function AboutUs() {
             notice of violation, online services, collections, FTB, and
             hearings.
           </h2>
-        </div>
-      </div>
-      <div className="bg-red-900 flex justify-around p-8">
-        <div className="bg-white/80 flex flex-col items-center w-2/5 h-40 mt-8 mr-6 pt-4">
-          <FaLaptop className="text-4xl"/>
-          <h1>Application Solutions</h1>
-        </div>
-        <div className="bg-gray-400/50 flex flex-col items-center w-2/5 h-40 mb-8 pt-4">
-          <FaMobileAlt className="text-4xl"/>
-          <h1>Mobile Solutions</h1>
-        </div>
-        <div className="bg-white/80 flex flex-col items-center w-2/5 h-40 mt-8 ml-6 pt-4">
-          <IoMdPaper className="text-4xl"/>
-          <h1>End to End Software</h1>
         </div>
       </div>
     </div>
