@@ -1,9 +1,9 @@
 export default function Banner() {
   return (
     <div
-      className="w-full min-h-[75vh] bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/images/parkingmeter.jpeg')" }}
-    >
+  className="w-full min-h-[85vh] pt-28 bg-cover bg-center relative"
+  style={{ backgroundImage: "url('/images/parkingmeter.jpeg')" }}
+>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20" />
 
