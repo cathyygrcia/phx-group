@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs";
 import Services from "./Services";
 import ContactUs from "./ContactUs";
 import Testimonials from "./Testimonials";
+import WhyChooseUs from "./WhyChooseus";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <AboutUs/>
         <Services/>
         <Testimonials/>
+        <WhyChooseUs/>
       </header>
     </div>
   );
