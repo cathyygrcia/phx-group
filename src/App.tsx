@@ -5,6 +5,7 @@ import Banner from "./Banner";
 import AboutUs from "./AboutUs";
 import Services from "./Services";
 import ContactUs from "./ContactUs";
+import Testimonials from "./Testimonials";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <ContactUs/>
         <AboutUs/>
         <Services/>
+        <Testimonials/>
       </header>
     </div>
   );
