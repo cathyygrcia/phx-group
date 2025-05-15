@@ -7,6 +7,7 @@ import Services from "./Services";
 import ContactUs from "./ContactUs";
 import Testimonials from "./Testimonials";
 import WhyChooseUs from "./WhyChooseus";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Services/>
         <Testimonials/>
         <WhyChooseUs/>
+        <Footer/>
       </header>
     </div>
   );
