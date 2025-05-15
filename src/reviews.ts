@@ -31,13 +31,19 @@ export const reviews: Reviews[] = [
     signature: "- Eva Foster",
     title: "Hollister Police Department"
   },
-/*
+
 {
   image: "/images/fresno.jpeg",
   review: "Your staff has always been extremely helpful. They are very courteous and professional.",
   signature: "- Armando Hindman",
   title: "County of Fresno"
+},
+{
+    image: "/images/ranchocordova.png",
+    review: "Our department has had the opportunity to test other vendors and other products for our traffic citation processing and customer service. Phoenix has the best customer service and is always willing to help us expediently by phone. We are very pleased with the service and would not recommend other companies.",
+    signature: "- Kristie Meeks",
+    title: "City of Rancho Cordova"
 }
-*/
+
 
 ];
