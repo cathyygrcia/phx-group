@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import { FaParking, FaTicketAlt } from "react-icons/fa";
+import { FaParking, FaTicketAlt, FaIdCard } from "react-icons/fa";
 
 export default function AppSolutions() {
   return (
@@ -16,8 +16,9 @@ export default function AppSolutions() {
           </p>
         </div>
 
-        {/* Section 1: Intro */}
-        <div className="mt-12 bg-white text-red-900 max-w-4xl mx-auto rounded-2xl shadow-md p-8 sm:p-12 space-y-8 text-lg leading-relaxed">
+        {/* Unified White Content Section */}
+        <div className="mt-12 bg-white text-red-900 max-w-6xl mx-auto rounded-2xl shadow-md p-8 sm:p-12 space-y-10 text-lg leading-relaxed">
+          {/* Image and Title */}
           <div className="text-center">
             <img
               src="/images/parking.jpg"
@@ -28,6 +29,8 @@ export default function AppSolutions() {
               Parking Citation Management
             </h2>
           </div>
+
+          {/* Intro Paragraphs */}
           <p className="text-gray-700">
             <span className="font-bold">PHOENIX GROUP Information Systems</span> provides our Parking Citation Management System,{" "}
             <span className="font-semibold">WINCITE.NET</span>, a fully automated program designed to streamline processing, controls, and the collection of parking payments.
@@ -35,12 +38,9 @@ export default function AppSolutions() {
           <p className="text-gray-700">
             Enhanced by our handheld enforcement technology and supporting software, this system delivers critical components to help cities and agencies maximize revenue in a real-time .NET environment.
           </p>
-        </div>
 
-        {/* Cards */}
-        <div className="mt-10 flex flex-col md:flex-row gap-8 max-w-4xl mx-auto">
-          {/* Card 1 */}
-          <div className="flex-1 bg-white text-red-900 rounded-2xl shadow-md p-8 hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+          {/* Reporting Features */}
+          <div>
             <h3 className="text-2xl font-extrabold text-red-800 text-center mb-6 tracking-tight flex items-center justify-center gap-2">
               <FaTicketAlt /> WINCITE.NET Reporting Features
             </h3>
@@ -55,8 +55,8 @@ export default function AppSolutions() {
             </p>
           </div>
 
-          {/* Card 2 */}
-          <div className="flex-1 bg-white text-red-900 rounded-2xl shadow-md p-8 hover:shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+          {/* Administrative Citation Management */}
+          <div>
             <h3 className="text-2xl font-extrabold text-red-800 text-center mb-6 tracking-tight flex items-center justify-center gap-2">
               <FaParking /> Administrative Citation Management
             </h3>
@@ -70,18 +70,40 @@ export default function AppSolutions() {
               As with parking citations, WINCITE.NET supports automated notices, reports, out-of-state tracking, and extensive workflow tools.
             </p>
           </div>
-        </div>
 
-        {/* List */}
-        <div className="max-w-4xl mx-auto mt-10">
-          <ul className="list-disc list-inside text-white space-y-3 text-xl font-semibold leading-relaxed bg-opacity-40 rounded-lg p-6">
+          {/* Feature List */}
+          <ul className="list-disc list-inside text-red-900 space-y-3 text-xl font-semibold leading-relaxed bg-red-100/50 rounded-lg p-6">
             <li>Data Entry, Real-Time .Net Environment, Remote Data Entry Capability.</li>
             <li>Inquiry Search Capability By Citation Number and Name.</li>
             <li>Full Communication with all Handheld Programs.</li>
             <li>Notice of Violation Mailed Daily.</li>
             <li>Online Real-Time Citation Inquiries And Remote Updating.</li>
-     
+            <li>Post-Office Box For Incoming Mail And Daily Pickup.</li>
           </ul>
+
+          {/* Residential & Temporary Permits */}
+          <div>
+            <h3 className="text-2xl font-extrabold text-red-800 text-center mb-6 tracking-tight flex items-center justify-center gap-2">
+              <FaIdCard /> Residential and Temporary Permits
+            </h3>
+            <p className="mb-4 text-gray-700">
+              Phoenix Group offers an on-line Permit System that can easily be modified to accommodate any client requirements. The program currently includes the following features and functions:
+            </p>
+            <ul className="list-disc list-inside space-y-2 pl-4 text-gray-700">
+              <li>Data Entry and Maintenance screen for issuing and viewing permits.</li>
+              <li>Search mode to find permit information by license plate, location, and contact name or permit number.</li>
+              <li>Printing capability to print new and (reprint) existing permits.</li>
+              <li>Payment Processing, by our customer service or remotely by the client.</li>
+              <li>Renewal letter notices.</li>
+              <li>Management reports in PDF and Excel that will identify all activity in the permit system.</li>
+            </ul>
+            <p className="mt-4 text-gray-700">
+              Client access to the Permit system is through a web-based system in conjunction with our Parking Citation program, WINCITE.NET. After a secure login, the user will have access to both parking permits and citations. Permits may be added or edited remotely with search functions allowing permit-specific information by vehicle license plate, location, and contact name or permit number.
+            </p>
+            <p className="mt-2 text-gray-700">
+              Letters of renewal may optionally be generated to the resident or property owner reminding them of renewal requirements for preferential parking permits and requesting payment.
+            </p>
+          </div>
         </div>
       </div>
     </>
