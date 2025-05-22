@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import AppSolutions from "./AppSolutions";
+import MobileSolutions from "./MobileSolutions";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,6 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/AppSolutions" element={<AppSolutions />} />
+      <Route path="/MobileSolutions" element={<MobileSolutions/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

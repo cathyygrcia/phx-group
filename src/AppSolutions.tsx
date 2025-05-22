@@ -5,15 +5,13 @@ export default function AppSolutions() {
   return (
     <>
       <Navbar />
-      <div className="bg-gradient-to-br from-red-900 via-red-800 to-red-700 pt-32 pb-20 px-4 sm:px-8 min-h-screen text-white font-sans">
+      <div className="bg-gradient-to-br from-red-900 via-red-800 to-red-700 pt-40 pb-20 px-4 sm:px-8 min-h-screen text-white font-sans">
         {/* Heading */}
         <div className="text-center">
           <h1 className="text-5xl font-extrabold tracking-tight max-w-4xl mx-auto">
             Application Solutions
           </h1>
-          <p className="mt-4 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
-            Streamlined systems for managing citations and administrative compliance.
-          </p>
+     
         </div>
 
         {/* Unified White Content Section */}
@@ -89,7 +87,7 @@ export default function AppSolutions() {
             <p className="mb-4 text-gray-700">
               Phoenix Group offers an on-line Permit System that can easily be modified to accommodate any client requirements. The program currently includes the following features and functions:
             </p>
-            <ul className="list-disc list-inside space-y-2 pl-4 text-gray-700">
+            <ul className="list-disc list-inside text-red-900 space-y-3 text-xl font-semibold leading-relaxed bg-red-100/50 rounded-lg p-6">
               <li>Data Entry and Maintenance screen for issuing and viewing permits.</li>
               <li>Search mode to find permit information by license plate, location, and contact name or permit number.</li>
               <li>Printing capability to print new and (reprint) existing permits.</li>

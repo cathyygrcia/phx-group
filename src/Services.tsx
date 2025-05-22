@@ -32,9 +32,9 @@ export default function Services() {
             complete mobile systems and software featuring state-of-the-art
             enforcement hardware and handheld technology.
           </p>
-          <button className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+          <Link to="/MobileSolutions" className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
             See More
-          </button>
+          </Link>
         </div>
 
         {/** Card 3 (Side Card 2) */}
