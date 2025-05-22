@@ -1,5 +1,6 @@
 import { FaLaptop, FaMobileAlt } from "react-icons/fa";
 import { IoMdPaper } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -14,9 +15,12 @@ export default function Services() {
             Management, Administrative Citation Management, and Residential and
             Temporary Permits.
           </p>
-          <button className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+          <Link
+            to="/AppSolutions"
+            className="mt-6 w-2/5 py-2 px-4 text-center bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white"
+          >
             See More
-          </button>
+          </Link>
         </div>
 
         {/** Card 2 (Middle Card - raised) */}
@@ -24,9 +28,9 @@ export default function Services() {
           <FaMobileAlt className="text-5xl mb-4 text-red-900 " />
           <h2 className="text-2xl font-semibold mb-2">Mobile Solutions</h2>
           <p className="text-xl">
-            In addition to application solutions, we offer the latest in complete
-            mobile systems and software featuring state-of-the-art enforcement
-            hardware and handheld technology.
+            In addition to application solutions, we offer the latest in
+            complete mobile systems and software featuring state-of-the-art
+            enforcement hardware and handheld technology.
           </p>
           <button className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
             See More
