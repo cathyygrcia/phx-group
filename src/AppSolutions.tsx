@@ -80,7 +80,7 @@ export default function AppSolutions() {
             <li>Full Communication with all Handheld Programs.</li>
             <li>Notice of Violation Mailed Daily.</li>
             <li>Online Real-Time Citation Inquiries And Remote Updating.</li>
-            <li>Post-Office Box For Incoming Mail And Daily Pickup.</li>
+     
           </ul>
         </div>
       </div>
