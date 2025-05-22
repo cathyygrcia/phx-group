@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 export default function WhyChooseUs() {
   return (
     <section className="bg-gray-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Text Content */}
         <div className="md:w-1/2">
           <h2 className="text-3xl font-bold text-red-800 mb-6 text-center md:text-left">
@@ -28,11 +28,23 @@ export default function WhyChooseUs() {
               grow alongside our clients.
             </p>
           </div>
+          <div className="mt-6 flex justify-center md:justify-center">
+            <img
+              src="/images/customerservice.jpg"
+              alt="Customer service representative"
+              className="rounded-xl shadow-md w-full max-w-xs object-cover"
+            />
+          </div>
         </div>
 
         {/* Right Content with Icons */}
-        <div className="md:w-1/2 flex justify-center">
-          <div className="bg-red-800 border border-gray-200 rounded-xl shadow-md p-12 w-full max-w-sm text-left">
+        <div className="md:w-1/2 flex flex-col items-center gap-6">
+          <img
+            src="/images/cloud.jpg"
+            alt="Cloud computing"
+            className="rounded-xl shadow-md w-full max-w-sm object-cover"
+          />
+          <div className="bg-red-800 border border-gray-200 rounded-xl shadow-md p-10 w-full max-w-md text-left">
             <ul className="text-white space-y-4">
               <li className="flex items-center gap-2 justify-start">
                 <FaCheckCircle className="text-white" />
