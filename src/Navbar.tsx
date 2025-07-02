@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,14 @@ export default function Navbar() {
         {/* Increased padding (py-6) */}
         {/* Logo */}
         <div className="flex items-center">
-          <img
-            src="/images/logo.png"
-            alt="Logo"
-            className=" w-auto cursor-pointer"
-          />{" "}
+        <Link to="/">
+  <img
+    src="/images/logo.png"
+    alt="Logo"
+    className="w-auto cursor-pointer"
+  />
+</Link>
+          {" "}
           {/* Increased logo height */}
         </div>
         {/* Desktop Links */}
