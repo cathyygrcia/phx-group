@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes} from "react-router-dom";
 import AppSolutions from "./AppSolutions";
 import MobileSolutions from "./MobileSolutions";
 import Software from "./Software";
+import ScrollToTop from "./ScrollToTop";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,6 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/AppSolutions" element={<AppSolutions />} />
