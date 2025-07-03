@@ -2,6 +2,9 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router";
+import { Link as ScrollLink } from 'react-scroll';
+
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,35 +14,58 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-red-800 text-white fixed top-0 left-0 z-50">
+    <nav className="w-full bg-red-800 text-white fixed top-0 left-0 z-50 ">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {" "}
         {/* Increased padding (py-6) */}
         {/* Logo */}
         <div className="flex items-center">
-        <Link to="/">
-  <img
-    src="/images/logo.png"
-    alt="Logo"
-    className="w-auto cursor-pointer"
-  />
-</Link>
-          {" "}
+          <Link to="/" >
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="w-auto cursor-pointer "
+            />
+          </Link>{" "}
           {/* Increased logo height */}
         </div>
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-10 text-lg font-medium">
-          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
-            About Us
+        <li>
+            <ScrollLink
+              to="about" 
+              smooth={true} duration={700} offset={-80}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 "
+            >
+              About Us
+            </ScrollLink>
           </li>
-          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
-            Services
+          <li>
+            <ScrollLink
+              to="services"
+              smooth={true} duration={700} offset={-120}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
+            >
+              Services
+            </ScrollLink>
           </li>
-          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
-            Reviews
+          <li>
+            <ScrollLink
+              to="reviews"
+              smooth={true} duration={700} offset={-80}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
+            >
+              Reviews
+            </ScrollLink>
           </li>
-          <li className="hover:text-gray-200 cursor-pointer transition-transform duration-200 transform hover:scale-105">
-            Contact
+          <li>
+            <ScrollLink
+              to="contact"
+              smooth={true} duration={700} offset={-100}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
+            >
+              Contact
+            </ScrollLink>
           </li>
         </ul>
         {/* Hamburger Menu Icon */}

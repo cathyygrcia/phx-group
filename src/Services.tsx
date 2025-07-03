@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
-    <div className="bg-red-900 p-8">
+    <div id="services" className="bg-red-900 p-8">
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center">
         {/** Card 1 (Side Card 1) */}
         <div className="flex-1 bg-white/80 flex flex-col items-center text-center p-8 rounded-xl shadow-md max-w-md">

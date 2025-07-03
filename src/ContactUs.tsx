@@ -2,7 +2,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactUs() {
   return (
-    <div className="p-8 bg-white/90 rounded-xl shadow-lg max-w-5xl mx-auto">
+    <div id="contact" className="p-8 bg-white/90 rounded-xl shadow-lg max-w-5xl mx-auto">
       <div className="flex flex-col gap-8 md:flex-row md:justify-between text-center items-center">
         {/* Phone */}
         <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
