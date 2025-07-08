@@ -2,9 +2,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router";
-import { Link as ScrollLink } from 'react-scroll';
-
-
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,28 +12,28 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-red-800 text-white fixed top-0 left-0 z-50 ">
+    <nav className="w-full bg-red-800 text-white fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        {" "}
-        {/* Increased padding (py-6) */}
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" >
+          <Link to="/">
             <img
               src="/images/logo.png"
               alt="Logo"
-              className="w-auto cursor-pointer "
+              className="w-auto cursor-pointer"
             />
-          </Link>{" "}
-          {/* Increased logo height */}
+          </Link>
         </div>
+
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-10 text-lg font-medium">
-        <li>
+          <li>
             <ScrollLink
-              to="about" 
-              smooth={true} duration={700} offset={-80}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 "
+              to="about"
+              smooth={true}
+              duration={700}
+              offset={-80}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
             >
               About Us
             </ScrollLink>
@@ -43,8 +41,10 @@ export default function Navbar() {
           <li>
             <ScrollLink
               to="services"
-              smooth={true} duration={700} offset={-120}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
+              smooth={true}
+              duration={700}
+              offset={-120}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
             >
               Services
             </ScrollLink>
@@ -52,8 +52,10 @@ export default function Navbar() {
           <li>
             <ScrollLink
               to="reviews"
-              smooth={true} duration={700} offset={-80}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
+              smooth={true}
+              duration={700}
+              offset={-80}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
             >
               Reviews
             </ScrollLink>
@@ -61,13 +63,16 @@ export default function Navbar() {
           <li>
             <ScrollLink
               to="contact"
-              smooth={true} duration={700} offset={-100}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
+              smooth={true}
+              duration={700}
+              offset={-100}
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
             >
               Contact
             </ScrollLink>
           </li>
         </ul>
+
         {/* Hamburger Menu Icon */}
         <button
           onClick={handleOpen}
@@ -90,32 +95,55 @@ export default function Navbar() {
             className="absolute top-6 right-6 text-white cursor-pointer"
             onClick={handleOpen}
           />
-          <img src="/images/logo.png" alt="Logo" className="h-16 mb-4" />{" "}
-          {/* Increased mobile logo size */}
+          <img src="/images/logo.png" alt="Logo" className="h-16 mb-4" />
           <ul className="text-center space-y-6 text-xl font-semibold">
-            <li
-              className="hover:text-gray-300 cursor-pointer"
-              onClick={handleOpen}
-            >
-              About Us
+            <li>
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={700}
+                offset={-80}
+                onClick={handleOpen}
+                className="hover:text-gray-300 cursor-pointer"
+              >
+                About Us
+              </ScrollLink>
             </li>
-            <li
-              className="hover:text-gray-300 cursor-pointer"
-              onClick={handleOpen}
-            >
-              Services
+            <li>
+              <ScrollLink
+                to="services"
+                smooth={true}
+                duration={700}
+                offset={-120}
+                onClick={handleOpen}
+                className="hover:text-gray-300 cursor-pointer"
+              >
+                Services
+              </ScrollLink>
             </li>
-            <li
-              className="hover:text-gray-300 cursor-pointer"
-              onClick={handleOpen}
-            >
-              Review
+            <li>
+              <ScrollLink
+                to="reviews"
+                smooth={true}
+                duration={700}
+                offset={-80}
+                onClick={handleOpen}
+                className="hover:text-gray-300 cursor-pointer"
+              >
+                Reviews
+              </ScrollLink>
             </li>
-            <li
-              className="hover:text-gray-300 cursor-pointer"
-              onClick={handleOpen}
-            >
-              Contact
+            <li>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={700}
+                offset={-100}
+                onClick={handleOpen}
+                className="hover:text-gray-300 cursor-pointer"
+              >
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>

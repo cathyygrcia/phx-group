@@ -45,7 +45,7 @@ export default function Services() {
             We manage every phase in the life of a parking citation — from the
             moment it's placed on the vehicle to final data processing.
           </p>
-          <Link to="/MobileSolutions" className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+          <Link to="/Software" className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
             See More
           </Link>
         </div>
