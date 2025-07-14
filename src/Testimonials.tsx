@@ -19,7 +19,7 @@ export default function Testimonials() {
   const visibleReviews = reviews.slice(startIndex, startIndex + reviewsPerPage);
 
   return (
-    <section className="bg-gray-50 px-4 py-12">
+    <section id="reviews" className="bg-gray-50 px-4 py-12">
       <div>
         <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mt-4">
           Testimonials

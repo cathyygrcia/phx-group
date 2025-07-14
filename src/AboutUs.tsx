@@ -1,7 +1,6 @@
-
 export default function AboutUs() {
   return (
-    <div className=" bg-red-900">
+    <div id="about" className="bg-red-900">
       <div className="flex flex-col items-center p-8 sm:p-16 md:p-20">
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl text-center pb-8">
           We Are Phoenix Group

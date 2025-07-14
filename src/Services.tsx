@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
-    <div className="bg-red-900 p-8">
+    <div id="services" className="bg-red-900 p-8">
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center">
         {/** Card 1 (Side Card 1) */}
         <div className="flex-1 bg-white/80 flex flex-col items-center text-center p-8 rounded-xl shadow-md max-w-md">
@@ -45,7 +45,7 @@ export default function Services() {
             We manage every phase in the life of a parking citation — from the
             moment it's placed on the vehicle to final data processing.
           </p>
-          <Link to="/MobileSolutions" className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
+          <Link to="/Software" className="mt-6 w-2/5 py-2 px-4 bg-transparent text-red-900 border-2 border-red-900 rounded-lg transition-all duration-300 hover:bg-red-900 hover:text-white">
             See More
           </Link>
         </div>

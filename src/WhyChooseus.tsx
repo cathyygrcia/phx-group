@@ -2,7 +2,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-gray-50 py-12 px-4">
+    <section id="chooseus" className="bg-gray-50 py-12 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Text Content */}
         <div className="md:w-1/2">
