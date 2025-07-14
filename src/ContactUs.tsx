@@ -12,11 +12,14 @@ export default function ContactUs() {
         </div>
 
         {/* Email */}
-        <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
+        <a
+          href="mailto:customerservice@phxgis.com"
+          className="flex flex-col items-center hover:scale-105 transition-transform duration-300"
+        >
           <FaEnvelope className="text-3xl text-red-900 mb-2" />
           <h2 className="text-lg font-semibold text-red-900">Email</h2>
           <p className="text-base text-gray-700">customerservice@phxgis.com</p>
-        </div>
+        </a>
 
         {/* Location */}
         <div className="flex flex-col items-center hover:scale-105 transition-transform duration-300">
