@@ -5,11 +5,11 @@ export default function WhyChooseUs() {
     <section id="chooseus" className="bg-gray-50 py-12 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Text Content */}
-        <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold text-red-800 mb-6 text-center md:text-left">
+        <div className="md:w-1/2" >
+          <h2 className="text-3xl font-bold text-red-800 mb-6 text-center md:text-left"  data-aos="fade-right">
             Why Choose Us?
           </h2>
-          <div className="space-y-4 text-gray-700 leading-relaxed text-center md:text-left">
+          <div className="space-y-4 text-gray-700 leading-relaxed text-center md:text-left"  data-aos="fade-right">
             <p>
               Phoenix Group Information Systems has an experienced and dedicated
               team for sales, service, and government contracts. Our devotion to
@@ -32,7 +32,6 @@ export default function WhyChooseUs() {
             <img
               src="/images/customerservice.jpg"
               alt="Customer service representative"
-              data-aos="fade-right"
               className="rounded-xl shadow-md w-full max-w-xs object-cover"
             />
           </div>
@@ -43,11 +42,11 @@ export default function WhyChooseUs() {
           <img
             src="/images/cloud.jpg"
             alt="Cloud computing"
-                data-aos="fade-left"
+                
             className="rounded-xl shadow-md w-full max-w-sm object-cover"
           />
-          <div className="bg-red-800 border border-gray-200 rounded-xl shadow-md p-10 w-full max-w-md text-left">
-            <ul className="text-white space-y-4">
+          <div className="bg-red-800 border border-gray-200 rounded-xl shadow-md p-10 w-full max-w-md text-left" data-aos="fade-left">
+            <ul className="text-white space-y-4" >
               <li className="flex items-center gap-2 justify-start">
                 <FaCheckCircle className="text-white" />
                 <span>Commitment to Excellence</span>

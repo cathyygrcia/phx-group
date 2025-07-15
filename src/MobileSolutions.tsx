@@ -20,6 +20,7 @@ export default function MobileSolutions() {
               src="/images/phone.png"
               alt="Android handheld"
               className="w-40 sm:w-48 md:w-56 lg:w-64 object-contain"
+              
             />
 
             {/* Text */}

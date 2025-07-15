@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration (ms)
-      once: false,     // whether animation happens only once
+      once: true, // whether animation happens only once
     });
   }, []);
 
@@ -24,32 +24,31 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar />
-        
-        {/* Add data-aos attribute here */}
+
         <div data-aos="fade-up">
           <Banner />
         </div>
-        
+
         <div>
           <ContactUs />
         </div>
-        
+
         <div>
           <AboutUs />
         </div>
-        
+
         <div>
           <Services />
         </div>
-        
-        <div>
+
+        <div data-aos="fade-up">
           <Testimonials />
         </div>
-        
+
         <div>
           <WhyChooseUs />
         </div>
-        
+
         <Footer />
       </header>
     </div>
