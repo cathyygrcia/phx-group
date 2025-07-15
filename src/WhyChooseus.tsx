@@ -32,6 +32,7 @@ export default function WhyChooseUs() {
             <img
               src="/images/customerservice.jpg"
               alt="Customer service representative"
+              data-aos="fade-right"
               className="rounded-xl shadow-md w-full max-w-xs object-cover"
             />
           </div>
@@ -42,6 +43,7 @@ export default function WhyChooseUs() {
           <img
             src="/images/cloud.jpg"
             alt="Cloud computing"
+                data-aos="fade-left"
             className="rounded-xl shadow-md w-full max-w-sm object-cover"
           />
           <div className="bg-red-800 border border-gray-200 rounded-xl shadow-md p-10 w-full max-w-md text-left">
