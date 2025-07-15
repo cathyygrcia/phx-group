@@ -1,3 +1,5 @@
+import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function MobileSolutions() {
@@ -20,7 +22,6 @@ export default function MobileSolutions() {
               src="/images/phone.png"
               alt="Android handheld"
               className="w-40 sm:w-48 md:w-56 lg:w-64 object-contain"
-              
             />
 
             {/* Text */}
@@ -48,18 +49,27 @@ export default function MobileSolutions() {
                 <li>Easy to use and proven to increase user efficiency.</li>
                 <li>Fast and seamless integration with existing systems.</li>
                 <li>Exclusive Wincite Application pre-installed.</li>
-                <li>No more dock-to-sync redundancy — auto sync via Wi-Fi or optional data plan.</li>
+                <li>
+                  No more dock-to-sync redundancy — auto sync via Wi-Fi or
+                  optional data plan.
+                </li>
                 <li>Fastest print-to-process speed in the industry.</li>
                 <li>Mobile-friendly Bluetooth printing capability.</li>
-                <li>Variety of field-ready Bluetooth printers to choose from.</li>
+                <li>
+                  Variety of field-ready Bluetooth printers to choose from.
+                </li>
                 <li>No more ink! Thermal printing technology.</li>
-                <li>No more envelopes! Heat, light, and weather-resistant paper.</li>
+                <li>
+                  No more envelopes! Heat, light, and weather-resistant paper.
+                </li>
                 <li>Fully customizable citation formats and artwork.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      <ContactUs />
+      <Footer />
     </>
   );
 }

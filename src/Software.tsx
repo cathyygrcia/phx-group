@@ -1,3 +1,5 @@
+import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { FaMobileAlt, FaBroom } from "react-icons/fa";
 
@@ -73,6 +75,8 @@ export default function Software() {
           </ul>
         </div>
       </div>
+      <ContactUs />
+      <Footer />
     </>
   );
 }

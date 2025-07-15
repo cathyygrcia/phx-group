@@ -1,4 +1,5 @@
-
+import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { FaParking, FaTicketAlt, FaIdCard } from "react-icons/fa";
 
@@ -100,8 +101,7 @@ export default function AppSolutions() {
 
           {/* Residential & Temporary Permits */}
           <div>
-            <h3 className="text-2xl font-extrabold text-red-800 text-center mb-6 tracking-tight flex items-center justify-center gap-2"
-             >
+            <h3 className="text-2xl font-extrabold text-red-800 text-center mb-6 tracking-tight flex items-center justify-center gap-2">
               <FaIdCard /> Residential and Temporary Permits
             </h3>
             <p className="mb-4 text-gray-700">
@@ -109,7 +109,10 @@ export default function AppSolutions() {
               modified to accommodate any client requirements. The program
               currently includes the following features and functions:
             </p>
-            <ul className="list-disc list-inside text-red-900 space-y-3 text-xl font-semibold leading-relaxed bg-red-100/50 rounded-lg p-6"   data-aos="zoom-up">
+            <ul
+              className="list-disc list-inside text-red-900 space-y-3 text-xl font-semibold leading-relaxed bg-red-100/50 rounded-lg p-6"
+              data-aos="zoom-up"
+            >
               <li>
                 Data Entry and Maintenance screen for issuing and viewing
                 permits.
@@ -147,9 +150,9 @@ export default function AppSolutions() {
             </p>
           </div>
         </div>
-        
       </div>
-     
+      <ContactUs />
+      <Footer />
     </>
   );
 }

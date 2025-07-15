@@ -7,7 +7,7 @@ export default function Services() {
     <div id="services" className="bg-red-900 p-8">
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center">
         {/** Card 1 (Side Card 1) */}
-        <div className="flex-1 bg-white/80 flex flex-col items-center text-center p-8 rounded-xl shadow-md max-w-md" data-aos="fade-right">
+        <div className="flex-1 bg-white/80 flex flex-col items-center text-center p-8 rounded-xl shadow-md max-w-md" data-aos="fade-right" data-aos-duration="500">
           <FaLaptop className="text-5xl mb-4 text-red-900 " />
           <h2 className="text-2xl font-semibold mb-2">Application Solutions</h2>
           <p className="text-xl">
@@ -38,7 +38,7 @@ export default function Services() {
         </div>
 
         {/** Card 3 (Side Card 2) */}
-        <div className="flex-1 bg-white/80 flex flex-col items-center text-center p-8 rounded-xl shadow-md max-w-md" data-aos="fade-left">
+        <div className="flex-1 bg-white/80 flex flex-col items-center text-center p-8 rounded-xl shadow-md max-w-md" data-aos="fade-left" data-aos-duration="500">
           <IoMdPaper className="text-5xl mb-4 text-red-900 " />
           <h2 className="text-2xl font-semibold mb-2">End-to-End Software</h2>
           <p className="text-xl">
