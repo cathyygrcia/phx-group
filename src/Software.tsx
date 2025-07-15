@@ -8,13 +8,13 @@ export default function Software() {
       <div className="bg-gradient-to-br from-red-900 via-red-800 to-red-700 pt-40 pb-20 px-4 sm:px-8 min-h-screen text-white font-sans">
         {/* Heading */}
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold tracking-tight max-w-4xl mx-auto">
+          <h1 className="text-5xl font-extrabold tracking-tight max-w-4xl mx-auto transition-shadow duration-300 mb-6 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
             Handheld Technology Software
           </h1>
         </div>
 
         {/* Unified White Content Section */}
-        <div className="mt-12 bg-white text-red-900 max-w-6xl mx-auto rounded-2xl shadow-md p-8 sm:p-12 space-y-10 text-lg leading-relaxed">
+        <div className="mt-12 bg-white text-red-900 max-w-6xl mx-auto rounded-2xl shadow-md p-8 sm:p-12 space-y-10 text-lg leading-relaxed transition-shadow duration-300 mb-6 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
           {/* Optional Image + Section Header */}
           <div className="text-center">
             <img
