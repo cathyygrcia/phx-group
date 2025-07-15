@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
@@ -13,35 +14,49 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration (ms)
-      once: true, // whether animation happens only once
+      duration: 1000,
+      once: true,
     });
   }, []);
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        // Slight delay ensures DOM is rendered
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
 
-        <div data-aos="fade-up">
+        <div  data-aos="fade-up">
           <Banner />
         </div>
 
-        <div>
+        <div id="contact" className="scroll-mt-24">
           <ContactUs />
         </div>
 
-        <div>
+        <div id="about" className="scroll-mt-24">
           <AboutUs />
         </div>
 
-        <div>
+        <div id="services" className="scroll-mt-36">
           <Services />
         </div>
 
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" id="reviews" className="scroll-mt-24">
           <Testimonials />
         </div>
 
