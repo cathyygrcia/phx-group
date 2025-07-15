@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
-import { Link } from "react-router";
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,48 +27,36 @@ export default function Navbar() {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-10 text-lg font-medium">
           <li>
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={700}
-              offset={-80}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
+            <Link
+              to="/#about"
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 "
             >
               About Us
-            </ScrollLink>
+            </Link>
           </li>
           <li>
-            <ScrollLink
-              to="services"
-              smooth={true}
-              duration={700}
-              offset={-120}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
+            <Link
+              to="/#services"
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 "
             >
               Services
-            </ScrollLink>
+            </Link>
           </li>
           <li>
-            <ScrollLink
-              to="reviews"
-              smooth={true}
-              duration={700}
-              offset={-80}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
+            <Link
+              to="/#reviews"
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
             >
               Reviews
-            </ScrollLink>
+            </Link>
           </li>
           <li>
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={700}
-              offset={-100}
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 cursor-pointer"
+            <Link
+              to="/#contact"
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
             >
               Contact
-            </ScrollLink>
+            </Link>
           </li>
         </ul>
 
@@ -98,52 +85,40 @@ export default function Navbar() {
           <img src="/images/logo.png" alt="Logo" className="h-16 mb-4" />
           <ul className="text-center space-y-6 text-xl font-semibold">
             <li>
-              <ScrollLink
-                to="about"
-                smooth={true}
-                duration={700}
-                offset={-80}
+              <Link
+                to="/#about"
                 onClick={handleOpen}
                 className="hover:text-gray-300 cursor-pointer"
               >
                 About Us
-              </ScrollLink>
+              </Link>
             </li>
             <li>
-              <ScrollLink
-                to="services"
-                smooth={true}
-                duration={700}
-                offset={-120}
+              <Link
+                to="/#services"
                 onClick={handleOpen}
                 className="hover:text-gray-300 cursor-pointer"
               >
                 Services
-              </ScrollLink>
+              </Link>
             </li>
             <li>
-              <ScrollLink
-                to="reviews"
-                smooth={true}
-                duration={700}
-                offset={-80}
+              <Link
+                to="/#reviews"
                 onClick={handleOpen}
                 className="hover:text-gray-300 cursor-pointer"
               >
                 Reviews
-              </ScrollLink>
+              </Link>
             </li>
             <li>
-              <ScrollLink
-                to="contact"
-                smooth={true}
-                duration={700}
-                offset={-100}
+              <Link
+                to="/#contact"
                 onClick={handleOpen}
                 className="hover:text-gray-300 cursor-pointer"
               >
                 Contact
-              </ScrollLink>
+              </Link>
             </li>
           </ul>
         </div>
