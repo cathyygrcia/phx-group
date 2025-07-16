@@ -44,23 +44,23 @@ function App() {
           <Banner />
         </div>
 
-        <div id="contact" className="scroll-mt-24">
+        <div id="contact" className="scroll-mt-8">
           <ContactUs />
         </div>
 
-        <div id="about" className="scroll-mt-24">
+        <div id="about" className="scroll-mt-8">
           <AboutUs />
         </div>
 
-        <div id="services" className="scroll-mt-36">
+        <div id="services" className="scroll-mt-16">
           <Services />
         </div>
 
-        <div data-aos="fade-up" id="reviews" className="scroll-mt-24">
+        <div data-aos="fade-up" id="reviews" className="scroll-mt-0">
           <Testimonials />
         </div>
 
-        <div>
+        <div id="chooseus">
           <WhyChooseUs />
         </div>
 
