@@ -1,35 +1,51 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full bg-red-800 text-white fixed top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <nav
+      className={`w-full fixed top-0 left-0 z-50 text-white transition-all duration-300 ${
+        isScrolled ? "py-2 shadow-md bg-red-900/50" : "py-4 bg-red-900"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 transition-all duration-300">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/">
             <img
               src="/images/logo.png"
               alt="Logo"
-              className="w-auto cursor-pointer"
+              className={`w-auto cursor-pointer transition-all duration-300 ${
+                isScrolled ? "h-8" : "h-12"
+              }`}
             />
           </Link>
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-10 text-lg font-medium">
+        <ul className="hidden md:flex space-x-10 text-sm font-medium">
           <li>
             <Link
               to="/#about"
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 "
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
             >
               About Us
             </Link>
@@ -37,7 +53,7 @@ export default function Navbar() {
           <li>
             <Link
               to="/#services"
-              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105 "
+              className="hover:text-gray-200 transition-transform duration-200 transform hover:scale-105"
             >
               Services
             </Link>
